@@ -5,12 +5,17 @@ import os
 import json
 
 os.system('find -empty -print -delete')
-ctx = uncurl.parse_context(input("Paste here an abstract GET request using 'copy to curl': "))
+curl = input("Paste here an abstract GET request using 'copy to curl': ")
+if curl:
+    ctx = uncurl.parse_context(curl)
 
-s = requests.Session()
-s.proxies = {'http': 'socks5://localhost:6666', 'https': 'socks5://localhost:6666'}
-s.headers = ctx.headers
-del s.headers['Accept-Encoding']
+    s = requests.Session()
+    s.proxies = {'http': 'socks5://localhost:6666', 'https': 'socks5://localhost:6666'}
+    s.headers = ctx.headers
+    try:
+        del s.headers['Accept-Encoding']
+    except KeyError:
+        pass
 
 
 def get_abstract(pii):
@@ -19,6 +24,9 @@ def get_abstract(pii):
             return json.load(o)
     except FileNotFoundError:
         print("Fetching abstract for", pii)
+        if not curl:
+            print("...but curl data is unavailable, skipping")
+            return None
         time.sleep(1)
         req = s.get(f'https://www.sciencedirect.com/search/api/abstract?pii={pii}')
         print(req, req.status_code, req.headers, req.text)

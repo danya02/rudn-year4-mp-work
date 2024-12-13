@@ -4,7 +4,7 @@ import requests
 import hashlib
 
 s = requests.Session()
-s.proxies = {'http': 'socks5://localhost:6666', 'https': 'socks5://localhost:6666'}
+#s.proxies = {'http': 'socks5://localhost:6666', 'https': 'socks5://localhost:6666'}
 
 def glue_all_text(struct):
     if isinstance(struct, list):
@@ -18,6 +18,7 @@ def glue_all_text(struct):
 
 def ask_abstract(abstract, seed):
     print("Asking with seed", seed)
+    print(abstract)
     system_prompt = '''
 In this scoping review, the Population is Wireless Mesh Networks, especially ad-hoc and IoT.
 Other kinds of networks, such as those using mobile phones, are excluded.
@@ -43,6 +44,7 @@ First provide your reasoning, then say "In conclusion, the answer is [yes/no]".
             'options': {'seed': seed}
         })
     response.raise_for_status()
+    print(response.text)
     return response
 
 
@@ -69,7 +71,7 @@ for item in open('06_filtered_by_abstracts.jsonl'):
 
     try:
         with open(f'ollama-state/{data["pii"]}.json') as f:
-            state = f.read()
+            state = json.loads(f.read())
     except FileNotFoundError:
         state = {'votes': [], 'verdict': None}
 
@@ -80,20 +82,30 @@ for item in open('06_filtered_by_abstracts.jsonl'):
     rng = lfsr(pii_hash, mask)
     for vote in range(3):
         seed = next(rng)
+        asked = False
 
         try:
-            state['votes'][vote]
-            continue
+            new_vote = state['votes'][vote]
         except IndexError:
             response = ask_abstract(abstract, seed)
             new_vote = response.json()
-            if 'the answer is yes' in new_vote['response']:
-                vote['verdict'] = True
-            elif 'the answer is no' in new_vote['response']:
-                vote['verdict'] = False
-            else:
-                vote['verdict'] = None
-            state['votes'].append(vote)
+            asked = True
+            
+        msg = new_vote['message']['content']
+        msg = ' '.join(msg.split())
+        msg = list(msg)
+        import string
+        msg = [i for i in msg if i in string.ascii_letters + ' ']
+        msg = ''.join(msg).lower()
+        print("MSG", msg)
+        if 'the answer is yes' in msg:
+            new_vote['verdict'] = True
+        elif 'the answer is no' in msg:
+            new_vote['verdict'] = False
+        else:
+            new_vote['verdict'] = None
+        if asked:
+            state['votes'].append(new_vote)
 
         # The verdict is the majority of the votes
         verdict_score = 0
@@ -113,9 +125,7 @@ for item in open('06_filtered_by_abstracts.jsonl'):
         with open(f'ollama-state/{data["pii"]}.json', 'w') as f:
             f.write(json.dumps(state))
 
-        with open(f'ollama-state/{data["pii"]}.json', 'w') as f:
-            f.write(json.dumps(state))
-
+    print(state)
     if state['verdict'] == True:
         with open('07_filtered_by_llm.jsonl', 'a+') as o:
             o.write(json.dumps(data) + '\n')
