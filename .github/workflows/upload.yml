@@ -22,11 +22,61 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: rm git
+        run: "rm -rf .git"
       - name: Mirror Directory Structure
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.DRIVE_CREDENTIAL }}
           filename: "*"
+          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
+          overwrite: "true"
+          mirrorDirectoryStructure: "true"
+      - name: Mirror Directory Structure
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
+          filename: "*/*"
+          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
+          overwrite: "true"
+          mirrorDirectoryStructure: "true"
+      - name: Mirror Directory Structure
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
+          filename: "*/*/*"
+          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
+          overwrite: "true"
+          mirrorDirectoryStructure: "true"
+      - name: Mirror Directory Structure
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
+          filename: "*/*/*/*"
+          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
+          overwrite: "true"
+          mirrorDirectoryStructure: "true"
+      - name: Mirror Directory Structure
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
+          filename: "*/*/*/*/*"
+          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
+          overwrite: "true"
+          mirrorDirectoryStructure: "true"
+      - name: Mirror Directory Structure
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
+          filename: "*/*/*/*/*/*"
+          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
+          overwrite: "true"
+          mirrorDirectoryStructure: "true"
+      - name: Mirror Directory Structure
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
+          filename: "*/*/*/*/*/*/*"
           folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
           overwrite: "true"
           mirrorDirectoryStructure: "true"
