@@ -26,7 +26,7 @@ jobs:
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: .
+          filename: *
           folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
           overwrite: "true"
           mirrorDirectoryStructure: "true"
