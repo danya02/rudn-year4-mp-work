@@ -25,58 +25,10 @@ jobs:
       - name: rm git
         run: "rm -rf .git"
       - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*/*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*/*/*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*/*/*/*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*/*/*/*/*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*/*/*/*/*/*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          credentials: ${{ secrets.DRIVE_CREDENTIAL }}
-          filename: "*/*/*/*/*/*/*"
-          folderId: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
+        uses: guillep2k/gitub-to-drive@latest
+        env:
+          GOOGLE_KEY: ${{ secrets.DRIVE_CREDENTIAL }}          # Always use secrets
+          GDRIVE_FOLDERID: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"    # Use secrets or vars accordingly
+          GIT_ORIGIN: "origin/main"              # Use secrets or vars accordingly
+          GIT_SUBDIR: "."              # Use secrets or vars accordingly
+          GIT_GLOB: "*"                  # Use secrets or vars accordingly
