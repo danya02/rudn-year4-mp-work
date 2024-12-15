@@ -25,7 +25,7 @@ jobs:
       - name: rm git
         run: "rm -rf .git"
       - name: Mirror Directory Structure
-        uses: guillep2k/gitub-to-drive@latest
+        uses: guillep2k/github-to-drive@v1.0.0
         env:
           GOOGLE_KEY: ${{ secrets.DRIVE_CREDENTIAL }}          # Always use secrets
           GDRIVE_FOLDERID: "1bBWbbHp_9hD5rUlyP52fApLKNQuYH4XE"    # Use secrets or vars accordingly
