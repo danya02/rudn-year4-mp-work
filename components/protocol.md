@@ -11,26 +11,25 @@ The review will be conducted in accordance with the Preferred Reporting Items fo
 ### Stage 1: Identifying the Research Questions
 
 A preliminary search of relevant literature was undertaken in one database (searching ScienceDirect) using the following queries:
-...
-
+`mesh network AND routing`, `wifi AND routing AND mesh`, `wireless AND mesh network`.
 
 These findings (e.g., [...]) were used to inform the background for the review, refine its scope, generate eligibility criteria, and develop the search strategy.
 
 The following objectives and research questions were identified:
 - Objective 1: Conceptualization
-  - How is gene classification defined and conceptualized in the context of artificial intelligence?
-  - What genetic datasets have been studied?
-  - What are the challenges in gene classification using AI approaches?
+  - How are routing algorithms defined and conceptualized in the context of IoT networks?
+  - What applications have been developed or studied?
+  - What are the challenges in the design of IoT wireless mesh networks?
 - Objective 2: Operationalization
-  - What AI algorithms are commonly used for gene classification?
+  - What algorithms and protocols are commonly used?
   - What metrics are used to evaluate the effectiveness of these algorithms?
-  - What datasets or preprocessing techniques are applied in gene classification studies?
-  - How are domain-specific challenges addressed in gene classification (e.g., imbalanced datasets, high dimensionality)?
+  - How are domain-specific challenges addressed in IoT (e.g., battery life, computational constraints)?
 - Objective 3: Evaluation
-  - How are the results of gene classification algorithms evaluated in terms of accuracy and efficiency?
+  - How are the results of routing protocols evaluated in terms of accuracy and efficiency?
   - What methodologies are used to validate and compare the algorithms?
-  - What is the success criterion for gene classification tasks?
-Through seeking to answer the above questions, we aim to identify gaps in the literature (Objective 4), which need to be addressed as part of future research on AI in gene classification.
+  - What is the success criterion for IoT wireless applications?
+
+hrough seeking to answer the above questions, we aim to identify gaps in the literature (Objective 4), which need to be addressed as part of future research on wireless mesh network routing.
 
 ### Stage 2: Identifying Relevant Studies
 The "PCC" mnemonic (population, concept, and context) is recommended by the Joanna Briggs Institute to construct clear inclusion criteria for scoping review and identify the focus and context of the review (Table 1).
@@ -42,15 +41,15 @@ All participants involved in the development and application of artificial intel
 #### Concept
 In defining the concept for this review, several decisions were made to focus the scope (Table 1). Studies that apply [...] will be included.
 
-To address Objective 1 (Conceptualization), we will consider primary studies, commentaries, and editorials that discuss theoretical frameworks, challenges, and benefits of applying AI in genomics.
+To address Objective 1 (Conceptualization), we will consider primary studies, commentaries, and editorials that discuss theoretical frameworks, methods, and challenges in the design of IoT wireless mesh networks.
 
-For Objectives 2 (Operationalization) and 3 (Evaluation), the review will focus on primary studies that use [...]. These studies must involve the [...] or methodologies that enhance or compare these models to other approaches. While the scope of these studies may vary [...], the core requirement is that AI plays a central role in the classification and analysis of genetic data.
+For Objectives 2 (Operationalization) and 3 (Evaluation), the review will focus on primary studies that involve the development of IoT devices and networks. These studies must involve a focus on routing or network maintenance. While the scope of these studies may vary between routing algorithms in specific or wireless networks in general, the core requirement is that they address the question of routing.
 
 Studies will only be included if they:
  1. Provide sufficient detail about the AI methodology, such as the model architecture, data preprocessing, and implementation techniques.
  2. Clearly define the objectives and methods, including how the AI algorithm was trained and evaluated.
 
-If studies employ methods outside of AI or focus on unrelated genomics tasks, they will be excluded. Additionally, if a study lacks sufficient methodological detail to assess its relevance to the research objectives, it will be reviewed with caution, and the ambiguity will be documented.
+If studies do not have a focus on routing, or apply to a different type of network, they will be excluded. Additionally, if a study lacks sufficient methodological detail to assess its relevance to the research objectives, it will be reviewed with caution, and the ambiguity will be documented.
 
 #### Context
 Studies that [...] will be included. This encompasses research globally, addressing diverse challenges such as [...]. The scope includes studies that analyze [...].
@@ -74,7 +73,8 @@ Manual searches of journals such as [...] will be conducted using targeted keywo
 Seminal reviews, commentaries, and influential articles will also be included to expand the dataset. For instance, studies analyzing the [...] will be prioritized.
 
 ### Stage 3: Study Selection
-The review process will be carried out by the reviewer in two stages. Titles and abstracts will be considered first; at this stage, some articles will be screened out. Articles that, in the opinion of any reviewer, meet the inclusion/exclusion criteria will be included in the full-text review. If, based on the results of the first stage of the review, it is unclear whether to include the article, it will be included in the full-text review. The final search results will be presented in the PRISMA flowchart from PRISMA-ScR.
+The review process will be carried out by the reviewer in two stages. Titles and abstracts will be considered first; at this stage, some articles will be screened out. Depending on the results of the first stage of the review, AI methods may be employed to help screen the articles.
+Articles that meet the inclusion/exclusion criteria will be included in the full-text review. If, based on the results of the first stage of the review, it is unclear whether to include the article, it will be included in the full-text review. The final search results will be presented in the PRISMA flowchart from PRISMA-ScR.
 
 ### Stage 4: Charting the Data
 Data will be extracted into a spreadsheet program following guidelines from the Joanna Briggs Institute (JBI). Each member will extract data for a proportion of articles.

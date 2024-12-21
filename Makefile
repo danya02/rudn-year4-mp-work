@@ -1,0 +1,2 @@
+sync:
+	rclone sync . "gdrive-rudn-mp:Практика_МП_статьи/Рабочие папки/Генералов" --drive-shared-with-me --progress -vv --exclude ".git/**" --exclude "auto_search/05_abstracts/**" --exclude "auto_search/ollama-state/**" --transfers=16
