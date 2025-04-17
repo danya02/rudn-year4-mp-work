@@ -23,6 +23,11 @@ with open('05_enriched_search_results.jsonl') as i, open('06_filtered_by_abstrac
     for line in i:
         in_lines += 1
         data = json.loads(line)
+        publication_date = data['load-date'].split('-')[0]
+        publication_date = int(publication_date)
+        # if publication_date not in [2018,2019,2020,2021,2022,2023,2024]:
+        #     continue
+
         abstractRaw = glue_all_text(data['abstract']).replace('\n', ' ')
         # print(abstractRaw)
         abstract = abstractRaw.lower()

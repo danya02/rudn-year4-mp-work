@@ -80,7 +80,7 @@ for item in open('06_filtered_by_abstracts.jsonl'):
     mask = 0xffff
     pii_hash = pii_hash & mask
     rng = lfsr(pii_hash, mask)
-    for vote in range(3):
+    for vote in range(5):
         seed = next(rng)
         asked = False
 
@@ -98,9 +98,9 @@ for item in open('06_filtered_by_abstracts.jsonl'):
         msg = [i for i in msg if i in string.ascii_letters + ' ']
         msg = ''.join(msg).lower()
         print("MSG", msg)
-        if 'the answer is yes' in msg:
+        if 'the answer is yes' in msg.lower():
             new_vote['verdict'] = True
-        elif 'the answer is no' in msg:
+        elif 'the answer is no' in msg.lower():
             new_vote['verdict'] = False
         else:
             new_vote['verdict'] = None

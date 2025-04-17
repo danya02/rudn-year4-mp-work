@@ -1,0 +1,122 @@
+Optimal Power Flow in electrical grids based on power routers
+Customized IoT Enabled Wireless Sensing and Monitoring Platform for Smart Buildings
+Development of 6LoWPAN in Embedded Wireless System
+Modelling gateway placement in wireless networks: Geometric <ce:italic>k</ce:italic>-centres of unit disc graphs
+FRR: A Fast Routing Recovery mechanism minimizing network formation time in smart grids
+Enhancing Collection Tree Protocol for Mobile Wireless Sensor Networks
+LEAS: Localized efficient authentication scheme for multi-operator wireless mesh network with identity-based proxy signature
+Sensor networks and distributed CSP: communication, computation and complexity
+Wireless Network Topological Routing in Wireless Sensor Networks
+A Signcryption based Light Weight Key Exchange Protocol
+Networked control system with MANET communication and AODV routing
+Wireless battery recharging through UAV in wireless sensor networks
+Insights for metrics in assessing TSCH scheduling efficiency
+RTP transport in IoT MQTT topologies
+Detection of superfluous in channels using data fusion with wireless sensors and fuzzy interface algorithm
+On the Delay of Reactive-Greedy-Reactive Routing in Unmanned Aeronautical Ad-hoc Networks
+SER Minimized Relay Selection for Physical Layer Network Coding in Two-way Relay Channels
+Wireless implanted magnetic resonance probes for <ce:italic>in vivo</ce:italic> NMR
+Remote reconfiguration of FPGA-based wireless sensor nodes for flexible Internet of Things<ce:sup loc=post>☆</ce:sup>
+Design and implementation of event-based multicast AODV routing protocol for ubiquitous network
+On Uniform Traffic Pattern of Symmetric Midimew Connected Mesh Network
+Optimization and modeling of modified unslotted CSMA/CA for wireless sensor networks
+An enhanced RSS-distance-angle weighted geometric filter for device-free localization
+Demand-driven Movement Strategy for Moving Beacons in Distributed Sensor Localization
+Realization of a multihop wireless controlled sensor and actuator network for cable installation
+Solving mesh router nodes placement problem in Wireless Mesh Networks by Tabu Search algorithm
+On the hardness of minimizing space for all-shortest-path interval routing schemes
+Performance Evaluation of First Hop Redundancy Protocols
+Joint topology control and routing in a UAV swarm for crowd surveillance
+An Efficient Revocation Scheme for Vehicular Ad-Hoc Networks
+<mml:math altimg=si1.gif display=inline overflow=scroll><mml:mi>ω</mml:mi></mml:math>-wide diameters of enhanced pyramid networks
+An Approach to Manage Mobility of Sensor Nodes in Sensor-Grid Infrastructure
+Time-slotted LoRa MAC with variable payload support
+Optimal gossiping in square 2D meshes
+When LoRa meets distributed machine learning to optimize the network connectivity for green and intelligent transportation system
+Development of WiFi Mesh Infrastructure for Internet of Things Applications
+Integration of LiFi Technology in an Industry 4.0 Learning Factory
+Routing protocols for wireless sensor networks: What the literature says?
+Novel Data Link Layer Encoding Scheme for Multi-hop Wireless Mesh Network
+Monitoring for Analytes through LoRa and LoRaWAN Technology
+F3TM: Flooding Factor based Trust Management Framework for secure data transmission in MANETs
+The Convergence Scheme on Network Utility Maximization in Wireless Multicast Networks
+Generation and Performance Evaluation of Reconfigurable Fault Tolerant Routing Algorithm for 2D-Mesh NoC
+The extra connectivity, extra conditional diagnosability and <ce:italic>t</ce:italic>/<ce:italic>k</ce:italic>-diagnosability of the data center network DCell
+On the influence of the hidden and exposed terminal problems on asynchronous IEEE 802.15.5 networks
+A state-based model of sensor protocols
+Acoustic Monitoring System Using Wireless Sensor Networks
+On the improvement of wireless mesh sensor network performance under hidden terminal problems
+The impact of mobility on the geocasting problem in mobile ad-hoc networks: Solvability and cost
+Adopting Acknowledgment Bitmap as An Implicit Indicator of the IEEE802.11n Wireless Network State
+Optimal channel selection for tri-band Wi-Fi in a residential scenario
+Centralized Rank Based Channel Assignment for Multi -Radio Multi-Channel Wireless Mesh Networks
+Greenness Link State Advertisement Extension for WDM Networks
+Enhanced Fuzzy Logic Zone Stable Election Protocol for Cluster Head Election (E-FLZSEPFCH) and Multipath Routing in wireless sensor networks
+Betweenness estimation in OLSR-based multi-hop networks for distributed filtering
+Approximating call-scheduling makespan in all-optical networks
+Investigating Target Detection and Localization in Wireless Sensor Network
+A cross layer optimization modeling for a periodic WSN application
+Smart grid evolution and mobile communications—Scenarios on the Finnish power grid
+Performance Evaluation of the IBETX Routing Metric Over DSDV Routing Protocol in Wireless Ad hoc Networks
+Improvement of LAR1 Routing Protocol
+Developing a reliable route protocol for mobile self-organization networks
+New Multifunctional Industrial Wireless Network Adapter
+A Multi-layer Routing Protocol for Mobility Management in Wireless Mesh Networks
+LPWC: Long preamble wake-up communication protocol for a LoRa network
+A Wireless Mesh Multipath Routing Protocol Based on Sorting Ant Colony Algorithm
+MLPRS: A Machine Learning-Based Proactive Re-Routing Scheme for flow classification and priority assignment
+A Fast Handoff Technique in Wireless Mesh Network (FHT for WMN)
+RPRDC: Reliable Proliferation Routing with low Duty-cycle in Wireless Sensor Networks
+A Comparison of Data Forwarding Schemes for Network Resiliency in Software Defined Networking
+Uniform Traffic Patterns using Virtual Cut-Through Flow Control on VMMN
+Studying HT-MCSs in IEEE 802.11n Networks via Simulations
+Joint Power and Rate Adaptation in Ad Hoc Networks Based on Coupled Interference
+GFDA: Route Discovery Algorithms for On-demand Mobile Ad Hoc Routing Protocols
+UBMR-CA: Utility-based multicast routing and channel assignment with varying traffic demands in multi-radio multi-channel wireless mesh networks
+Neo-hybrid Composite Routing Metric for RPL
+Manufacturing floor mapping and presence tracking with a physics-based game engine
+Survivable Traffic Grooming RWA Protocol for WDM Networks
+SparkLink: A short-range wireless communication protocol with ultra-low latency and ultra-high reliability
+Congestion Avoidance Hybrid Wireless Mesh Protocol (CA-HWMP) for IEEE 802.11s
+Issues of Implementing Random Walk and Gossip Based Resource Discovery Protocols in P2P MANETs & Suggestions for Improvement
+Optimal algorithms for the many-to-one routing problem on two-dimensional meshes
+Internet of Things in arable farming: Implementation, applications, challenges and potential
+Modeling and Optimization Algorithms in Ship Weather Routing
+Connectivity Standards Alliance Matter: State of the art and opportunities
+Recent advances in simulation and mathematical modeling of wireless networks
+Research on State Multicast Routing Algorithm Based on Distributed Sensing Network
+Performance Modeling and Simulation for Future Mobile Networks
+Flexible and Modular Low Power Wireless Networks
+Is 6LoWPAN-ND necessary? (Spoiler alert: Yes)
+Application of Network Tomography in Load Balancing
+Reflective Network Tomography Based on Compressed Sensing
+Transmission power allocation in flow-guided nanocommunication networks
+Adaptive aggregation based IoT traffic patterns for optimizing smart city network performance
+An Effective AODV-based Flooding Detection and Prevention for Smart Meter Network
+Research of AODV Routing Protocol for Ad Hoc Networks1
+Dynamic robot routing optimization: State–space decomposition for operations research-informed reinforcement learning
+A reliable, delay bounded and less complex communication protocol for multicluster FANETs
+Secure opportunistic routing in 2-hop IEEE 802.15.4 networks with SMOR
+An efficient neighbor nodes trust tagging model for optimized route detection in smart grids with secure data transmission
+Improvement of AODV Routing Protocol with QoS Support in Wireless Mesh Networks
+An Adaptive and Distributed Collision-Free MAC Protocol for Wireless Personal Area Networks
+Multi-route query processing and optimization
+Optimization architecture for joint multi-path routing and scheduling in wireless mesh networks
+5G Wireless Mesh Network 802.11s Load Balancing Architecture for 802.11 Bgn Radio-PCI Interface
+PSM-DMO: Power Save Mode and Discontinuous BLE Mesh Operation
+Performance Evaluation of IEEE 802.15.4 Protocol Under Coexistence of WiFi 802.11b
+Interference-aware Congestion Control Protocol for Wireless Sensor Networks
+Learning-based visibility prediction for terahertz communications in 6G networks
+Spatial networks with wireless applications
+Methodology for Monitoring Manufacturing Environment by Using Wireless Sensor Networks (WSN) and the Internet of Things (IoT)
+A novel minimum delay maximum flow multicast algorithm to construct a multicast tree in wireless mesh networks
+A Novel algorithm on network reliability estimation
+Partitioning and Internetworking Wireless Mesh Network with Wired Network for Delivery Maximization and QoS Provisioning
+A Dynamic Mesh-based Wireless Multicast Opportunistic Routing with Network Coding
+Computation of Various QoS Parameters for FiWi Access Network
+Designing A Secure and Long-Lived WSN for Data Collection
+Executing tree routing algorithms on a high-performance pattern associative router
+Beyond Wi-Fi 7: Spatial reuse through multi-AP coordination
+Assessing the impact of summer heat on the movement of people in Tokyo based on mobile phone location data
+Assessing the Impact of the Burst Size in the FTM Ranging Procedure in COTS Wi-Fi Devices
+Efficient delay routing

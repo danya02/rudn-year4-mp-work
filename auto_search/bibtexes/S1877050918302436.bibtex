@@ -1,0 +1,14 @@
+@article{HASAN2018454,
+title = {An Effective AODV-based Flooding Detection and Prevention for Smart Meter Network},
+journal = {Procedia Computer Science},
+volume = {129},
+pages = {454-460},
+year = {2018},
+note = {2017 INTERNATIONAL CONFERENCE ON IDENTIFICATION,INFORMATION AND KNOWLEDGEIN THE INTERNET OF THINGS},
+issn = {1877-0509},
+doi = {https://doi.org/10.1016/j.procs.2018.03.024},
+url = {https://www.sciencedirect.com/science/article/pii/S1877050918302436},
+author = {Md Raqibull Hasan and Yanxiao Zhao and Yu Luo and Guodong Wang and Robb M Winter},
+keywords = {FLOW-AODV, Flooding attack detection, Smart meter network, Packet delivery ratio},
+abstract = {In this paper, we investigate flooding attack detection and prevention for smart meter networks. The default Ad hoc On-Demand Distance Vector (AODV) protocol is vulnerable to flooding attacks because intermediate meters forward packets blindly. To detect and prevent flooding attacks, we propose a new AODV-based routing protocol called FLOoding aWareness AODV (FLOW-AODV) considering both with and without Internet Protocol (IP) spoofing. If no IP spoofing exists, we modify the route request forwarding procedure by adding new features. The main idea is to enable one-hop neighboring meters to detect attackers by counting the received route requests from the same source. Specifically, when a meter receives a request, it first determines whether it is a one-hop neighbor to the source or not. If yes, the one-hop neighboring meter updates its request counter for every received request from that source. When the received requests exceed a predefined number (e.g., 2), it perceives the source as an attacker and just discards the following requests, so the flooding is avoided. In this way, the receiver can prevent flooding attacks when there is no IP spoofing from flooding attacker. If IP spoofing exists, the flooding attacker will hide its real IP address. In this case, we have extended our algorithm and included trustworthiness of each neighbor in the neighbor routing table. Extensive simulations are conducted in NS3 to evaluate the performance of FLOW-AODV. Results show that FLOW-AODV obtains considerably higher performance in terms of packet delivery ratio, and average delay compared with the default AODV routing protocol. In addition, the FLOW-AODV significantly improves network performance and eliminates congestion when multiple attackers are involved.}
+}
