@@ -12,7 +12,7 @@ documentclass: scrreprt
 
 # Routing Algorithms in Wireless Ad-Hoc Mesh Networks: A Scoping Review
 
-Generalov Daniil^1^
+Generalov Daniil Mikhailovich^1^
 
 Peoples' Friendship University of Russia named after Patrice Lumumba, Moscow, Russian Federation
 
@@ -76,13 +76,11 @@ The study's objective, research questions, eligibility criteria,
 and search strategy were defined before initiating the data collection process.
 The protocol was not registered in PROSPERO,
 as scoping reviews fall outside the platform's registration scope.
-Any deviations from the original protocol are be documented
-in the "Limitations" section of the final manuscript.
 
 ### Transparency Statement
 
 The study is conducted with full transparency,
-and this section provides an accurate and detailed account of all methodological steps.
+and this report provides an accurate and detailed account of all methodological steps.
 No significant aspects of the process are omitted,
 and any methodological decisions are documented.
 Any discrepancies between the original plan and the actual
@@ -153,7 +151,7 @@ By integrating both automated and manual search methods,
 the strategy ensured a more thorough examination of the literature.
 Ultimately, this search strategy provided a solid foundation for the review,
 allowing us to identify a wide range of studies that address routing in MANETs.
-z
+
 The following search queries were used:
 
 - mesh network AND routing
@@ -170,8 +168,12 @@ an AI approach was used in the filtering process:
 the titles and abstracts were submitted into a LLM,
 along with the inclusion/exclusion criteria,
 and the LLM was asked to say whether the article seemed to match the criteria.
-The same question was asked five times with random, but deterministically generated seed values;
-each response was a vote for inclusion or exclusion.
+The same question was asked five times with random, but deterministically generated seed values,
+and the LLM was then directed to answer whether the article seems to meet the criteria.
+Each response that followed the given template
+(which was designed to avoid errors where the LLM would misinterpret the question)
+was a vote for inclusion or exclusion;
+if a response was ambiguous, it was considered as a neutral vote.
 If there was a clear majority for exclusion, then the paper was skipped;
 otherwise, in the case of a majority for inclusion or a tie,
 the paper was advanced to the full-text review.
